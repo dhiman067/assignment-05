@@ -5,9 +5,10 @@ import { Bounce, toast } from "react-toastify"
 
 export interface TechCardProps {
   card: Itech
+  handleSelectedStack: (stack: Itech) => void
 }
 
-export default function TechCard({ card }: TechCardProps) {
+export default function TechCard({ card,handleSelectedStack,selectedStack }: TechCardProps) {
   let [addBtn, setAddBtn] = useState("Add to Stack")
   let handleAddBtn = () => {
     setAddBtn("Added to Stack")
@@ -69,13 +70,15 @@ export default function TechCard({ card }: TechCardProps) {
         </div>
 
         {/* Action Button */}
-        <button onClick={handleAddBtn} className={`btn ${addBtn==="Add to Stack"? "bg-slate-950 text-white font-semibold":"bg-pink-100 text-pink-500 font-bold"}  rounded-xl border-none normal-case text-sm  w-full`}
+        <button onClick={() => { handleAddBtn(); handleSelectedStack(card); }} className={`btn ${addBtn==="Add to Stack"? "bg-slate-950 text-white font-semibold":"bg-pink-100 text-pink-500 font-bold"}  rounded-xl border-none normal-case text-sm  w-full`}
         disabled={addBtn==="Added to Stack"?true:false}
+        
+
         >
         {addBtn==="Added to Stack"?(
           
             <div className="flex">
-                <TiTick className="text-lg" aria-hidden="true" />
+                <TiTick className="text-lg" />
                 {addBtn}
               </div>):`${addBtn}`}
       </button>
