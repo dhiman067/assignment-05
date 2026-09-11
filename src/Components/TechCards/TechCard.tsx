@@ -8,12 +8,12 @@ export interface TechCardProps {
 }
 
 export default function TechCard({ card }: TechCardProps) {
-  let [addBtn, setAddBtn] = useState(false)
-  let handleAddBtn = (value) => {
-    setAddBtn(value)
+  let [addBtn, setAddBtn] = useState("Add to Stack")
+  let handleAddBtn = () => {
+    setAddBtn("Added to Stack")
     toast.success('Added Successfully', {
       position: "bottom-right",
-      autoClose: 5000,
+      autoClose: 500,
       hideProgressBar: false,
       closeOnClick: false,
       pauseOnHover: true,
@@ -69,17 +69,16 @@ export default function TechCard({ card }: TechCardProps) {
         </div>
 
         {/* Action Button */}
-        <button onClick={() => handleAddBtn(true)} className={`btn ${addBtn ? "bg-pink-200 text-pink-500 font-bold" : "bg-slate-950  text-white font-semibold"}  rounded-xl border-none normal-case text-sm  w-full`}>
-          <div>
-            {addBtn ? (
-
-              <div className="flex">
+        <button onClick={handleAddBtn} className={`btn ${addBtn==="Add to Stack"? "bg-slate-950 text-white font-semibold":"bg-pink-100 text-pink-500 font-bold"}  rounded-xl border-none normal-case text-sm  w-full`}
+        disabled={addBtn==="Added to Stack"?true:false}
+        >
+        {addBtn==="Added to Stack"?(
+          
+            <div className="flex">
                 <TiTick className="text-lg" aria-hidden="true" />
-                Added to Stack
-              </div>
-            ) : "Add to Stack"}
-          </div>
-        </button>
+                {addBtn}
+              </div>):`${addBtn}`}
+      </button>
 
       </div>
 

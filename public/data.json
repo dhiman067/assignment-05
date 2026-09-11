@@ -54,7 +54,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful, open-source object-relational database system with proven reliability.",
-    "icon": "https://icon.icepanel.io/Technology/png-30/PostgresSQL.png",
+    "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Top SQL"
