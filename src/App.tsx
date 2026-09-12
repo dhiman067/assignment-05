@@ -5,6 +5,7 @@ import Banner from './Components/Banner-Section/Banner'
 import Navbar from './Components/Banner-Section/Navbar'
 import TechCards from './Components/TechCards/TechCards'
 import type { Itech } from './Type'
+import Footer from './Components/Footer/Footer'
 
 
 let TechCardPromise = async():Promise<Itech[]>=>{
@@ -23,7 +24,7 @@ function App() {
      <Suspense fallback={<h1>Loadingg....</h1>}>
                 <TechCards TechCardPromise={TechCardPromise()}></TechCards>
      </Suspense>
-     
+     <Footer></Footer>
 
     </>
   )

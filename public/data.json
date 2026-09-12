@@ -7,7 +7,10 @@
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
+    "badge": "Popular",
+    "badgeColor":"F0F9FF",
+    "badgeTextColor":"0EA5E9"
+
   },
   {
     "id": 2,
@@ -17,7 +20,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
-    "badge": "Versatile"
+    "badge": "Versatile",
+    "badgeColor":"ECFDF5",
+    "badgeTextColor":"059669"    
   },
   {
     "id": 3,
@@ -27,7 +32,10 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Svelte.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Fast"
+    "badge": "Fast",
+    "badgeColor":"FFEDD5",
+    "badgeTextColor":"EA580C"   
+    
   },
   {
     "id": 4,
@@ -37,7 +45,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Next.js.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": null
+    "badge": "SSR/Edge",
+    "badgeColor":"F3E8FF",
+    "badgeTextColor":"7E22CE"   
   },
   {
     "id": 5,
@@ -47,7 +57,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Standard"
+    "badge": "Standard",
+    "badgeColor":"D1FAE5",
+    "badgeTextColor":"059669"   
   },
   {
     "id": 6,
@@ -57,7 +69,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Top SQL"
+    "badge": "Top SQL",
+    "badgeColor":"DBEAFE",
+    "badgeTextColor":"2563EB"   
   },
   {
     "id": 7,
@@ -67,7 +81,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Redis.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Cache"
+    "badge": "Cache",
+    "badgeColor":"FEF2F2",
+    "badgeTextColor":"DC2626"   
   },
   {
     "id": 8,
@@ -77,7 +93,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Ubiquitous"
+    "badge": "Ubiquitous",
+    "badgeColor":"FEF3C7",
+    "badgeTextColor":"D97706"   
   },
   {
     "id": 9,
@@ -87,7 +105,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Essential"
+    "badge": "Essential",
+    "badgeColor":"E0F2FE",
+    "badgeTextColor":"0284C7"   
   },
   {
     "id": 10,
@@ -97,7 +117,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
     "rating": 4.6,
     "difficulty": "Intermediate",
-    "badge": "Robust"
+    "badge": "Robust",
+    "badgeColor":"E0F2FE",
+    "badgeTextColor":"0284C7"   
   },
   {
     "id": 11,
@@ -107,7 +129,9 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Modern"
+    "badge": "Modern",
+    "badgeColor":"ECFEFF",
+    "badgeTextColor":"0284C7"  
   },
   {
     "id": 12,
@@ -117,6 +141,8 @@
     "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
-    "badge": "Containers"
+    "badge": "Containers",
+    "badgeColor":"E0F2FE",
+    "badgeTextColor":"0284C7"   
   }
 ]

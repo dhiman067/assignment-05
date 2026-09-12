@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import type { Itech } from "../../Type"
 import { TiTick } from "react-icons/ti"
 import { Bounce, toast } from "react-toastify"
@@ -6,10 +6,19 @@ import { Bounce, toast } from "react-toastify"
 export interface TechCardProps {
   card: Itech
   handleSelectedStack: (stack: Itech) => void
+  selectedStack: []
 }
 
-export default function TechCard({ card,handleSelectedStack, handleRemoveStack }: TechCardProps) {
+export default function TechCard({ card, handleSelectedStack, selectedStack }: TechCardProps) {
   let [addBtn, setAddBtn] = useState("Add to Stack")
+
+
+  // did this part with ai
+  useEffect(() => {
+    let isSelected = selectedStack.some(stack => stack.id === card.id)
+    setAddBtn(isSelected ? "Added to Stack" : "Add to Stack")
+  }, [selectedStack, card.id])
+
   let handleAddBtn = () => {
     setAddBtn("Added to Stack")
     toast.success(`Added ${card.name} Successfully`, {
@@ -39,7 +48,10 @@ export default function TechCard({ card,handleSelectedStack, handleRemoveStack }
           </div>
 
           {card.badge && (
-            <span className="badge badge-lg bg-sky-50 text-sky-500 border-none font-medium px-4 py-3 rounded-full text-xs">
+            <span style={{
+              backgroundColor: `#${card.badgeColor}`,
+              color: `#${card.badgeTextColor}`,
+            }} className={`badge badge-lg  border-none font-medium px-4 py-3 rounded-full text-xs`}>
               {card.badge}
             </span>
           )}
@@ -70,18 +82,18 @@ export default function TechCard({ card,handleSelectedStack, handleRemoveStack }
         </div>
 
         {/* Action Button */}
-        <button onClick={() => { handleAddBtn(); handleSelectedStack(card); }} className={`btn ${addBtn==="Add to Stack"? "bg-slate-950 text-white font-semibold":"bg-pink-100 text-pink-500 font-bold"}  rounded-xl border-none normal-case text-sm  w-full`}
-        disabled={addBtn==="Added to Stack"?true:false}
-        
+        <button onClick={() => { handleAddBtn(); handleSelectedStack(card); }} className={`btn ${addBtn === "Add to Stack" ? "bg-slate-950 text-white font-semibold" : "bg-pink-100 text-pink-500 font-bold"}  rounded-xl border-none normal-case text-sm  w-full`}
+          disabled={addBtn === "Added to Stack" ? true : false}
+
 
         >
-        {addBtn==="Added to Stack"?(
-          
+          {addBtn === "Added to Stack" ? (
+
             <div className="flex">
-                <TiTick className="text-lg" />
-                {addBtn}
-              </div>):`${addBtn}`}
-      </button>
+              <TiTick className="text-lg" />
+              {addBtn}
+            </div>) : `${addBtn}`}
+        </button>
 
       </div>
 
