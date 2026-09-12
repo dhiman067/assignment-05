@@ -8,23 +8,26 @@ import type { Itech } from './Type'
 import Footer from './Components/Footer/Footer'
 
 
-let TechCardPromise = async():Promise<Itech[]>=>{
+let TechCardPromise = async (): Promise<Itech[]> => {
   let res = await fetch('/data.json')
   let data = await res.json()
   return data
 }
 
 function App() {
-  
+
 
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-     <Suspense fallback={<h1>Loadingg....</h1>}>
-                <TechCards TechCardPromise={TechCardPromise()}></TechCards>
-     </Suspense>
-     <Footer></Footer>
+      <Suspense fallback={<div className="flex items-center justify-center">
+        <span className="loading loading-spinner"></span>
+        loading
+      </div>}>
+        <TechCards TechCardPromise={TechCardPromise()}></TechCards>
+      </Suspense>
+      <Footer></Footer>
 
     </>
   )
