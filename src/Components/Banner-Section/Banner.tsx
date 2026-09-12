@@ -1,7 +1,7 @@
 
 const Banner = () => {
   return (
-    <div>
+    <div className="">
       <hr className="text-amber-50" />
       <div className=" xl:px-[10rem]  flex flex-col items-center py-[3rem] xl:flex xl:flex-row xl:justify-around">
         <div className="flex flex-col items-center gap-[2rem] ">
@@ -9,7 +9,7 @@ const Banner = () => {
           <p className="text-center text-[#4B5563] font-medium xl:text-start">Explore frontend, backend, database, and tooling <br />options,
             compare them side by side, and put together <br />the stack that fits your
             next project.</p>
-             <div className="mt-[3rem] flex gap-1.5 xl:mr-auto">
+             <div className="mt-[1rem] flex gap-1.5 xl:mr-auto">
               <a className="btn bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white rounded-xl">Explore Technologies</a>
              <a className="btn rounded-xl bg-white mr-1 px-[3rem]">Learn More</a>
             </div>

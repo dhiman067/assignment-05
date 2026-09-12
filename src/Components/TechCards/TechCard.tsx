@@ -8,13 +8,13 @@ export interface TechCardProps {
   handleSelectedStack: (stack: Itech) => void
 }
 
-export default function TechCard({ card,handleSelectedStack,selectedStack }: TechCardProps) {
+export default function TechCard({ card,handleSelectedStack, handleRemoveStack }: TechCardProps) {
   let [addBtn, setAddBtn] = useState("Add to Stack")
   let handleAddBtn = () => {
     setAddBtn("Added to Stack")
-    toast.success('Added Successfully', {
+    toast.success(`Added ${card.name} Successfully`, {
       position: "bottom-right",
-      autoClose: 500,
+      autoClose: 1000,
       hideProgressBar: false,
       closeOnClick: false,
       pauseOnHover: true,
