@@ -6,7 +6,7 @@ import { Bounce, toast } from "react-toastify"
 export interface TechCardProps {
   card: Itech
   handleSelectedStack: (stack: Itech) => void
-  selectedStack: []
+  selectedStack: Itech[]
 }
 
 export default function TechCard({ card, handleSelectedStack, selectedStack }: TechCardProps) {

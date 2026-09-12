@@ -69,7 +69,7 @@ export default function TechCards({ TechCardPromise }: TechCardsProps) {
                 <div className="flex flex-col items-center lg:flex lg:flex-row lg:items-start lg:gap-14">
                     <div className="xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2  gap-x-16 gap-y-6 py-4 flex flex-col items-center">
                         {
-                            techCards.map(card => <TechCard  handleRemoveStack={ handleRemoveStack} selectedStack={selectedStack} handleSelectedStack={handleSelectedStack} key={card.id} card={card}></TechCard>)
+                            techCards.map(card => <TechCard selectedStack={selectedStack} handleSelectedStack={handleSelectedStack} key={card.id} card={card}></TechCard>)
                         }
                     </div>
                     {/* stack */}
