@@ -1,3 +1,5 @@
+import logoText from "../../assets/logo-text.png"
+
 const Navbar = () => {
   return (
     <div className="sticky top-0 z-50">
@@ -17,7 +19,7 @@ const Navbar = () => {
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl"><img src={`./src/assets/logo-text.png`} alt="" /></a>
+          <a className="btn btn-ghost text-xl"><img src={logoText} alt="Logo" /></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-medium">

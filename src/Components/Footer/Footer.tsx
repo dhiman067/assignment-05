@@ -1,4 +1,6 @@
 
+import logoText from "../../assets/logo-text.png"
+
 
 const Footer = () => {
   return (
@@ -12,7 +14,7 @@ const Footer = () => {
           <div className="lg:col-span-2 space-y-4">
 
             <div className="flex items-center space-x-3">
-              <img src={`./src/assets/logo-text.png`} alt="" />
+              <img src={logoText} alt="Logo" />
             </div>
 
 

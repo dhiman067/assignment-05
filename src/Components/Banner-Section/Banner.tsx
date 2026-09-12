@@ -1,4 +1,6 @@
 
+import bannerStack from "../../assets/banner-stack.png"
+
 const Banner = () => {
   return (
     <div className="">
@@ -16,7 +18,7 @@ const Banner = () => {
         </div>
            
         <div>
-          <img src={`./src/assets/banner-stack.png`}/>
+          <img src={bannerStack} alt="Development stack illustration" />
         </div>
       </div>
     </div>
