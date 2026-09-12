@@ -37,7 +37,7 @@ export default function TechCard({ card, handleSelectedStack, selectedStack }: T
     <div>
       <div className="card w-80 bg-base-100 border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
 
-        {/* Top Header Section: Icon & Optional Badge */}
+
         <div className="flex justify-between items-start mb-4 h-10">
           <div className="w-10 h-10 flex items-center justify-center">
             <img
@@ -57,7 +57,7 @@ export default function TechCard({ card, handleSelectedStack, selectedStack }: T
           )}
         </div>
 
-        {/* Content Section: Name & Description */}
+
         <div className="mb-6">
           <h2 className="text-xl font-bold text-slate-900 mb-2">{card.name}</h2>
           <p className="text-sm text-slate-500 leading-relaxed min-h-[4rem] line-clamp-3">
@@ -65,7 +65,7 @@ export default function TechCard({ card, handleSelectedStack, selectedStack }: T
           </p>
         </div>
 
-        {/* Metadata Section: Category, Difficulty, Rating */}
+
         <div className="flex items-center justify-between text-xs pt-4 border-t border-gray-100 mb-5">
           <span className="bg-slate-100 text-slate-600 font-medium px-2.5 py-1 rounded-md">
             {card.category}
@@ -81,7 +81,7 @@ export default function TechCard({ card, handleSelectedStack, selectedStack }: T
           </div>
         </div>
 
-        {/* Action Button */}
+
         <button onClick={() => { handleAddBtn(); handleSelectedStack(card); }} className={`btn ${addBtn === "Add to Stack" ? "bg-slate-950 text-white font-semibold" : "bg-pink-100 text-pink-500 font-bold"}  rounded-xl border-none normal-case text-sm  w-full`}
           disabled={addBtn === "Added to Stack" ? true : false}
 
