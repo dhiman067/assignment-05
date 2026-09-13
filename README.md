@@ -27,7 +27,7 @@ A modern, responsive React web application designed to help users efficiently to
 ## 💡 React Concept Answers
 
 ### 1. What is JSX, and why is it used in React?
-**JSX is a stack where you can write html inside JavaScript expression.
+- **JSX is a stack where you can write html inside JavaScript expression.
 
 ---
 
@@ -37,23 +37,23 @@ A modern, responsive React web application designed to help users efficiently to
 ---
 
 ### 3. What does the `useState` hook do, and where did you use it in this project?
-The useState hook keeps track of the particular change or particular event that will happen. When state update's, React automatically updates the visual UI.  
+- The useState hook keeps track of the particular change or particular event that will happen. When state update's, React automatically updates the visual UI.  
 **Where used in this project:** Used to store the stack a user gonna use .
 
 ---
 
 ### 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
-`useEffect` lets you perform side effects in components, such as fetching data from an external API or file.  
+- `useEffect` lets you perform side effects in components, such as fetching data from an external API or file.  
 **Why needed:** I did not use it here to fetch data. I used Suspense hook here.
 ---
 
 ### 5. Why does every item in a `.map()` list need a unique `key` prop?
-The key prop helps React to track each rendered element,which comes from mostly array of objects, individually.
+- The key prop helps React to track each rendered element,which comes from mostly array of objects, individually.
 ---
 
 ### 6. What is conditional rendering? Show one place you used it.
-**Conditional rendering** means rendering UI elements differently based on specific conditions.  
-**Example used:** in the "Add to Stack" button, in the sidebar when no stack is choosen.
+- **Conditional rendering** means rendering UI elements differently based on specific conditions.  
+- **Example used:** in the "Add to Stack" button, in the sidebar when no stack is choosen.
 ---
 
 ### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
