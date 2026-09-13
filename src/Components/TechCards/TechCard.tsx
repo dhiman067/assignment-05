@@ -35,7 +35,7 @@ export default function TechCard({ card, handleSelectedStack, selectedStack }: T
   }
   return (
     <div>
-      <div className="card w-80 bg-base-100 border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
+      <div className={`${addBtn === "Add to Stack" ? " border-gray-100" : "border border-pink-200 "}card w-80 bg-base-100 rounded-3xl p-6 shadow-lg hover:shadow-md transition-shadow duration-200`}>
 
 
         <div className="flex justify-between items-start mb-4 h-10">
