@@ -58,4 +58,3 @@ A modern, responsive React web application designed to help users efficiently to
 
 ### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 - You can send data from parent component to child as a prop. But child component can not directly send any data to parent because in React the data flow is unidirectional. You can only send date from parent to child.   
-**Example used:** in the "Add to Stack" button, in the sidebar when no stack is choosen.
